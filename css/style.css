@@ -11,11 +11,11 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-  html {
+html {
     scroll-behavior: smooth;
   }
-  p {
-    color: rgb(85, 85, 85);
+p {
+  color: rgb(85, 85, 85);
   }
 
 /* TRANSITION */
@@ -86,7 +86,7 @@ section {
   display: flex;
   justify-content: center;
   gap: 5rem;
-  height: 80vh;
+  height: 45vh;
 }
 
 .section__pic-container {
@@ -183,6 +183,15 @@ section {
   gap: 1rem;
 }
 
+/* FOOTER SECTION */
 
+footer {
+  height: 26vh;
+  margin: 0 1rem;
+}
+
+footer p {
+  text-align: center;
+}
 
   
