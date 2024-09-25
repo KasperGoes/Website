@@ -8,51 +8,68 @@
   <link rel="stylesheet" href="css/media.css">
 </head>
 <body>
-  <nav id="desktop-nav">
-    <div class="logo">Kasper Goes</div>
-    <div>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+<nav id="desktop-nav">
+  <ul>
+    <li><a href="index.html" class="logo">Kasper Goes</a></li>
+  </ul>
+  <div>
+    <ul class="nav-links">
+      <li><a href="about.html">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+<nav id="hamburger-nav">
+  <ul>
+    <li><a href="index.html" class="logo">Kasper Goes</a></li>
+  </ul>
+  <div class="hamburger-menu">
+    <div class="hamburger-icon" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
-  </nav>
+    <div class="menu-links">
+      <li><a href="about.html" onclick="toggleMenu()">About</a></li>
+      <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+    </div>
+  </div>
+</nav>
 
-
-  <section id="profile">
-    <div class="section__pic-container">
-      <img src="./assets/me.png" alt="Kasper Goes photo" />
+<section id="profile">
+  <div class="section__pic-container">
+    <img src="./assets/me.png" alt="Kasper Goes photo" />
+  </div>
+  <div class="section__text">
+    <p class="section__text__p1">Hello, I'm</p>
+    <h1 class="title">Kasper Goes</h1>
+    <div class="btn-container">
+      <button
+      class="btn btn-color-2"
+      onclick="window.open('./assets/CV_Kasper_Goes_2024.pdf')"
+    >
+      Download CV
+    </button>      
     </div>
-    <div class="section__text">
-      <p class="section__text__p1">Hello, I'm</p>
-      <h1 class="title">Kasper Goes</h1>
-      <div class="btn-container">
-        <button
-          class="btn btn-color-2"
-          onclick="window.open('./assets/CV_Kasper_Goes_2024.pdf')"
-        >
-          Download CV
-      </div>
-      <div id="socials-container">
-        <img
-          src="./assets/linkedin.png"
-          alt="My LinkedIn profile"
-          class="icon"
-          onclick="window.open('https://www.linkedin.com/in/kaspergoes/', '_blank')"
-        />
-        <img
-          src="./assets/github.png"
-          alt="My Github profile"
-          class="icon"
-          onclick="window.open('https://github.com/KasperGoes', '_blank')"
-        />
-      </div>
+    <div id="socials-container">
+      <img
+        src="./assets/linkedin.png"
+        alt="My LinkedIn profile"
+        class="icon"
+        onclick="window.open('https://www.linkedin.com/in/kaspergoes/', '_blank')"
+      />
+      <img
+        src="./assets/github.png"
+        alt="My Github profile"
+        class="icon"
+        onclick="window.open('https://github.com/KasperGoes', '_blank')"
+      />
     </div>
-  </section>
+  </div>
+</section>
 
   <footer>
-
-    <p>Copyright &#169; 2024 Kasper Goes. All Rights Reserved.</p>
+    <p>Copyright &#169; 2024 Kasper . All Rights Reserved.</p>
   </footer>
 
   <script>src='script.js'</script>
