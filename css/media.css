@@ -8,8 +8,8 @@
       height: calc(var(--aspect-height) *  0.3rem); /* Convert the aspect-height variable into pixels */
       width: calc(var(--aspect-width) *  0.3rem);  /* Convert the aspect-width variable into pixels */
     }
+    
   }
-  
 @media screen and (max-width: 1200px) {
   #desktop-nav {
     display: none;
@@ -21,7 +21,8 @@
   #profile{
     display: block;
   }
-  #about{
+  #about,
+  .section-container{
     display: block;
   }
 
@@ -49,6 +50,7 @@
 
   
 @media screen and (max-width: 600px) {
+
 
 
   #contact,
